@@ -1,0 +1,109 @@
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Modo escuro */
+    body.dark {
+        background-color: #121212;
+        color: white;
+    }
+    body.dark .header,
+    body.dark .footer,
+    body.dark .navbar {
+        background-color: #222;
+    }
+    body.dark .side,
+    body.dark .main {
+        background-color: #2a2a2a;
+    }
+    body.dark .fakeimg {
+        background-color: #444;
+        color: #ccc;
+    }
+    
+    #darkModeToggle {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background-color: lightgray;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    body.dark #darkModeToggle {
+        background-color: #444;
+        color: white;
+    }
+    
+    .header {
+        padding: 20px;
+        background-color: #f3b3d8;
+        color: white;
+        text-align: center;
+    }
+    
+    .navbar {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    
+    .navbar a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s, background-color 0.3s;
+    }
+    .navbar a:hover {
+        background-color: white;
+        color: #333;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .side {
+        flex: 1;
+        padding: 15px;
+        background-color: #f4f4f4;
+    }
+    
+    .main {
+        flex: 2;
+        padding: 15px;
+        background-color: #fafafa;
+    }
+    
+    .fakeimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .fakeimg:hover {
+        background-color: #f3b3d8;
+    }
+
+    .footer {
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+    }
+    

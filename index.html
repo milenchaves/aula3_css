@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K-DramaKorea</title>
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/32px-Flag_of_South_Korea.svg.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Botão para alternar para o modo escuro -->
+    <button id="darkModeToggle">🌙</button>
+
+    <header class="header">
+      <h1>K-DramaKorea</h1>
+    </header>
+
+    <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#doramas">Doramas</a>
+          <a href="#atores">Atores</a>
+          <a href="#categorias">Categorias</a>
+    </nav>
+
+    <main class="row">
+      
+      <aside class="side">
+        <h2>Saiba Mais</h2>
+        <h5>Alquimia das Almas</h5>
+        <img src="https://img.odcdn.com.br/wp-content/uploads/2023/02/Alquimia-das-almas-doroma-netflix-1024x576.png" alt="alquima das almdas" style="height: 300px; width: 100%; border-radius: 6px; object-fit: cover;" />
+        <h3>Outros K-Dramas</h3>
+        <div class="fakeimg" style="height:60px;">Beleza Verdadeira</div><br>
+        <div class="fakeimg" style="height:60px;">Hidden Love</div><br>
+        <div class="fakeimg" style="height:60px;">Corredora Adorável</div>
+      </aside>
+
+    
+      <section class="main">
+        <h2>A Jornada de Ju-kyung</h2>
+        <h5>Transformação além da maquiagem</h5>
+        <img src="https://s2-techtudo.glbimg.com/i3_Yr_uMdfnvIcAb9VOHhR9BNDk=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/4/1/h3gAriRP6CkzSDTkXWBQ/true-beauty-verdadeira-beleza.jpg" alt="Ju-kyung e Su-ho" style="height: 500px; width: 100%; border-radius: 6px; object-fit: cover;" />
+        <p>Ju-kyung esconde suas inseguranças por trás da maquiagem, 
+          mas aos poucos descobre que sua verdadeira beleza vem de dentro.</p>
+        <p>Com a ajuda de novos amigos e experiências inesperadas, 
+          ela começa a enfrentar o mundo com mais coragem.</p>
+        <br />
+        <h2>Entre o Amor e a Aceitação</h2>
+        <h5>Dois corações e uma escolha</h5>
+        <img src="https://wallpapers.com/images/featured/verdadeira-beleza-0bum0etjn9ze2pxj.jpg" alt="Ju-kyung e homens" style="height: 300px; width: 100%; border-radius: 6px; object-fit: cover;" />
+        <p>Dividida entre dois amores, Ju-kyung aprende que o mais importante é ser aceita por quem realmente é.</p>
+        <p>A história mostra que o amor verdadeiro vai além da aparência e floresce na sinceridade e no respeito.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2>DramaKorea</h2>
+    </footer>
+
+    <!-- Script para alternar os modos -->
+    <script>
+      const btn = document.getElementById("darkModeToggle");
+      btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+      });
+    </script>
+</body>
+</html>
